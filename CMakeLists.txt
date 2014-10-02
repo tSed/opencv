@@ -9,6 +9,8 @@
 #
 # ----------------------------------------------------------------------------
 
+cmake_policy(SET CMP0045 OLD)
+cmake_policy(SET CMP0026 OLD)
 set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS true)
 
 # Following block can broke build in case of cross-compilng

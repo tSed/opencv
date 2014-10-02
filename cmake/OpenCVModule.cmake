@@ -43,6 +43,9 @@
 #
 #   ocv_define_module(modname <dependencies>)
 
+cmake_policy(SET CMP0045 OLD)
+cmake_policy(SET CMP0026 OLD)
+
 # clean flags for modules enabled on previous cmake run
 # this is necessary to correctly handle modules removal
 foreach(mod ${OPENCV_MODULES_BUILD} ${OPENCV_MODULES_DISABLED_USER} ${OPENCV_MODULES_DISABLED_AUTO} ${OPENCV_MODULES_DISABLED_FORCE})

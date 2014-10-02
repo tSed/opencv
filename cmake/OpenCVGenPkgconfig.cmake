@@ -8,6 +8,8 @@
 #
 # ${BIN_DIR}/unix-install/opencv.pc -> For use *with* "make install"
 # -------------------------------------------------------------------------------------------
+cmake_policy(SET CMP0026 OLD)
+
 set(prefix      "${CMAKE_INSTALL_PREFIX}")
 set(exec_prefix "\${prefix}")
 set(libdir      "") #TODO: need link paths for OpenCV_EXTRA_COMPONENTS

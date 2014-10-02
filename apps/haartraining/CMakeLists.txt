@@ -1,3 +1,5 @@
+cmake_policy(SET CMP0038 OLD)
+
 SET(OPENCV_HAARTRAINING_DEPS opencv_core opencv_imgproc opencv_highgui opencv_objdetect opencv_calib3d opencv_video opencv_features2d opencv_flann opencv_legacy)
 ocv_check_dependencies(${OPENCV_HAARTRAINING_DEPS})
 
